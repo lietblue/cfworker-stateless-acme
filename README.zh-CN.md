@@ -17,6 +17,7 @@ $ acme.sh --register-account
 
 将密钥摘要填写至代码中的 `acmeAccountThumbprint` 变量
 之后复制部署到Cloudflare-workers并部署再绑定到域名就可以了
+
 使用以下脚本进行证书订阅
 `acme.sh --issue -d <你的域名>  --stateless`
 
@@ -32,11 +33,13 @@ $ acme.sh --register-account
 
 密钥文件的位置通常为:
 `~/.acme.sh/ca/<你的ACME CA提供者>/directory/account.key`
+
 以Let's Encrypt为例:
 `~/.acme.sh/ca/acme-v02.api.letsencrypt.org/directory/account.key`
 
 
 然后将account.key文件分发到其他acme.sh客户端的相同位置
+
 之后执行`acme.sh --register-account`就可以统一密钥特征
 
 

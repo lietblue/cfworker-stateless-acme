@@ -19,6 +19,7 @@ Copy your account thumbprint to the`acmeAccountThumbprint` variable
 
 Then copy the script to the Cloudflare-workers edit page
 Press save & deploy then bound your domain to the cfworker
+
 Use the following command to issus a cert
 `acme.sh --issue -d <Your domain here>  --stateless`
 
@@ -33,6 +34,7 @@ This command `acme.sh --register-account`will create `account.key` file in the A
 
 `account.key` usually located at:
 `~/.acme.sh/ca/<Your ACME CA Provider>/directory/account.key`
+
 For Let's Encrypt:
 `~/.acme.sh/ca/acme-v02.api.letsencrypt.org/directory/account.key`
 
@@ -41,6 +43,7 @@ Then copy the `account.key` to other acme.sh client then use `acme.sh --register
 
 
 If you don't know where you should put your account key 
+
 use `acme.sh --create-account-key` acme.sh will create the folder containing`account.key` for you replace that key with your own key
 
 
