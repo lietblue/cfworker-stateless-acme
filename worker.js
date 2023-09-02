@@ -6,10 +6,13 @@ export default {
     // This is the default respond thumbprint comment this line to disable it
     acmeAccount.set("default","Your default acme account thumbprint here");
 
+    // more domain
+    //acmeAccount.set("another.domain.here","some other thumbprint");
+
     const url = new URL(request.url);
     const acmeChallengePathRegExp = new RegExp("^/.well-known/acme-challenge/([-_a-zA-Z0-9]+)$");
     const tokenMatch = acmeChallengePathRegExp.exec(url.pathname);
-    
+
     if (tokenMatch !== null) {
       // https://datatracker.ietf.org/doc/html/rfc8555#page-64
       // [token].[acmeAccountThumbprint]
