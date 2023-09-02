@@ -7,6 +7,7 @@ English | [中文](https://github.com/lietblue/cfworker-stateless-acme/blob/main
 Requirements: [acme.sh](https://github.com/acmesh-official/acme.sh)
 
 Usage:
+
 ```
 $ acme.sh --register-account
 [Sat 02 Sep 2023 01:32:39 PM CST] Create account key ok.
@@ -14,7 +15,8 @@ $ acme.sh --register-account
 [Sat 02 Sep 2023 01:32:42 PM CST] Registered
 [Sat 02 Sep 2023 01:32:42 PM CST] ACCOUNT_THUMBPRINT='<Here is your account thumbprint>'
 ```
-Copy your account thumbprint to the`acmeAccountThumbprint` variable
+
+Change `acmeAccount` variable using domain and account thumbprint accordingly
 
 
 Then copy the script to the Cloudflare-workers edit page

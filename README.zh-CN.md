@@ -7,6 +7,7 @@
 需要: [acme.sh](https://github.com/acmesh-official/acme.sh)
 
 食用方法:
+
 ```
 $ acme.sh --register-account
 [Sat 02 Sep 2023 01:32:39 PM CST] Create account key ok.
@@ -15,7 +16,7 @@ $ acme.sh --register-account
 [Sat 02 Sep 2023 01:32:42 PM CST] ACCOUNT_THUMBPRINT='<这里是你密钥的摘要>'
 ```
 
-将密钥摘要填写至代码中的 `acmeAccountThumbprint` 变量
+将密钥摘要与域名填写至代码中的 `acmeAccountThumbprint` 变量
 之后复制部署到Cloudflare-workers并部署再绑定到域名就可以了
 
 使用以下脚本进行证书订阅
